@@ -29,12 +29,12 @@ app.get("/", (req, res) => {
 });
 
 // Dynamically load all routes from the routes directory
-fs.readdirSync("./routes").forEach((file) => {
-  if (file.endsWith(".js")) {
-    const route = require(`./routes/${file}`);
-    app.use("/api", route);
-  }
-});
+// fs.readdirSync("./routes").forEach((file) => {
+//   if (file.endsWith(".js")) {
+//     const route = require(`./routes/${file}`);
+//     app.use("/api", route);
+//   }
+// });
 // const mailRoutes = require("./routes/mail");
 // const userRoutes = require("./routes/user");
 // app.use("/api", mailRoutes);
