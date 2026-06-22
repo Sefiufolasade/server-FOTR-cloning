@@ -10,8 +10,8 @@ const app = express();
 
 const allowedOrigins = [
   "http://localhost:3000",
-  "https://okgconsult.com",
-  "https://www.okgconsult.com",
+  "https://folaontherise.com",
+  "https://www.folaontherise.com",
 ];
 
 app.use(morgan("dev"));
